@@ -1,0 +1,1 @@
+Just a kata, a way to practice different languages (C#, java, scala, Go, python, etc.)
