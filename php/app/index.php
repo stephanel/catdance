@@ -6,8 +6,8 @@ include('view.class.php');
 $i = rand(0, sizeof($images)-1);
 $url = $images[$i];
 
-$view = new View('index.template');
-$view->apply('url', $url);
-$view->echo();
+View::create('index.view')
+    ->apply('url', $url)
+    ->echo();
 
 ?>
