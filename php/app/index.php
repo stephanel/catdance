@@ -5,35 +5,9 @@ include('stores.php');
 $i = rand(0, sizeof($images)-1);
 $url = $images[$i];
 
-$html = '
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>catdance</title>
-    <style type="text/css">
-        div.gif-container {
-            max-width: 500px;
-            margin: 100px auto;
-            border: 20px solid white;
-            padding: 10px;
-            text-align: center;
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <main role="main">
-            <div class="gif-container">
-                <h4>Cat Gif of the day</h4>
-                <img src="'.$url.'" />
-            </div>
-        </main>
-    </div>
-</body>
-</html>
-';
+$html = file_get_contents('index.view.php');
+
+$html = str_replace("{url}", $url, $html);
 
 echo $html;
 
