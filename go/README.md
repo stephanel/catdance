@@ -3,8 +3,8 @@
 ### Packages Installation
 
 ```bash
-go get https://github.com/gorilla/pat
-go get https://github.com/urfave/negroni
+go get github.com/gorilla/pat
+go get github.com/urfave/negroni
 ```
 
 ### Run the application
@@ -21,7 +21,7 @@ Then, navigate to http://localhost:3001/.
 Or better, you can use [gin](https://github.com/codegangsta/gin).
 
 ```bash
-go get https://github.com/codegangsta/gin
+go get github.com/codegangsta/gin
 cd <path to app folder>
 gin
 ```
