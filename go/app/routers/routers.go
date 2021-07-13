@@ -1,8 +1,8 @@
 package routers
 
 import (
-	"../controllers"
-	"../urls"
+	"catdance/controllers"
+	"catdance/urls"
 
 	"github.com/gorilla/pat"
 )

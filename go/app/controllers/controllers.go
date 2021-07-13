@@ -5,9 +5,9 @@ import (
 	"net/http"
 	"time"
 
-	"../stores"
-	"../templates"
-	"../utils"
+	"catdance/stores"
+	"catdance/templates"
+	"catdance/utils"
 )
 
 func HomeController(res http.ResponseWriter, req *http.Request) {

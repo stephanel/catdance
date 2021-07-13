@@ -4,7 +4,7 @@ import (
 	"net/http"
 	"text/template"
 
-	"../templates"
+	"catdance/templates"
 )
 
 func CustomTemplateExecute(res http.ResponseWriter, req *http.Request, templateName string, data map[string]interface{}) {
